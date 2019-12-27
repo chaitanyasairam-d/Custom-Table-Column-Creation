@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Custome Columns</title>
+    <script src="https://kit.fontawesome.com/2de7e1b7c9.js" crossorigin="anonymous" SameSite="None"></script>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+    <section id="columns-creator">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-primary text-center">Number of Columns Module</h2>
+                </div>
+
+                <div class="col-md-6 ml-auto mr-auto mt-5">
+                    <form>
+                        <div class="input-group">
+                            <div class="input-group-prepand">
+                                <label for="nu=oOfColumns" class="btn">
+                                    Number of Columns :
+                                </label>
+                            </div>
+                            <input type="number" id="noOfColumns" class="form-control" required>
+                        </div>
+
+                        <button type="button" id="addColumn"
+                            class="mt-2 btn btn-primary rounded-0 float-right">submit</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="columnValues">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h2 class="text-primary text-center">Column Creator Module</h2>
+                </div>
+                <div class="col-md-12 mt-2">
+                    <h4 class="alert alert-danger text-center"  id="tb-col-error"></h4>
+                    
+                </div>
+                <div class="col-md-12 ml-auto mr-auto mt-5">
+                   <form>
+                    <table class="table">
+                        <tbody>
+                            <tr id="column-data">
+
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button type="button" onclick="getTable()" class="btn btn-primary rounded-0">Submit </button>
+                   </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="mainTable">
+        <div class="container-fluid">
+            <div class="row">
+               
+                <div class="col-md-12">
+                    <h2 class="text-primary text-center">Table Entry Module</h2>
+                </div>
+                <div class="col-md-12 mt-2">
+                    <h4 class="alert alert-danger text-center"  id="tb-entry-error"></h4>
+                    
+                </div>
+                <div class="col-md-12 mt-5 mb-4">
+                   <form>
+                    <table id="fill-table" class="table  table-borderless">
+
+                    </table>
+
+                    <button type="button" onclick="tableData()" class="btn btn-primary rounded-0">Submit</button>
+                   </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="table-data">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-primary text-center">Table Data Module</h2>
+                </div>
+                <div class="col-md-12 ml-auto mr-auto mt-5">
+                    <table class="table table-bordered" id="table-fill-data">
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/jQuery.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
